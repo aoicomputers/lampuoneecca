@@ -38,7 +38,8 @@
   <body>
     <div id="text-info"></div>
 <script>
-var start = 'Connecting to Smart Home',
+var go = 'http://192.168.43.248:16080/a',
+    start = 'Connecting to Smart Home',
     start1 = 'Connecting to Smart Home .',
     start2 = 'Connecting to Smart Home ..',
     start3 = 'Connecting to Smart Home ...',
@@ -79,7 +80,7 @@ var start = 'Connecting to Smart Home',
         }
 
       };
-      xhttp.open("GET", (window.location = ('http://192.168.43.248:16080/a')), true);
+      xhttp.open("GET", go, true);
       xhttp.send();
     }, 350 ) ;
 
